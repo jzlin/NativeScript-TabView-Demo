@@ -1,9 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ItemListComponent } from './item-list.component';
+
 @Component({
     moduleId: module.id,
+    directives: [
+        ItemListComponent
+    ],
     selector: 'tab1',
-    template: `<Label text="tab1 content"></Label>`
+    template: `<item-list></item-list>`
 })
 export class Tab1Component implements OnInit {
     constructor() { }
